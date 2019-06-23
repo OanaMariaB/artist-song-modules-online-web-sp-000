@@ -9,5 +9,9 @@ module Memorable
      self.all.count
    end
 
+   module InstanceMethods
+       def initialize
+         include Memorable::InstanceMethods
+       end
  end
 end
